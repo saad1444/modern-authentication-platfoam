@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+<header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center p-4 space-y-2 md:space-y-0">
+    <a href="index.html" class="text-2xl font-bold text-green-600 dark:text-green-400">ModernAuth</a>
+    <nav class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 text-center sm:text-left">
+      <a href="index.html" class="hover:text-green-600 dark:hover:text-green-400 transition">Home</a>
+      <a href="features.html" class="hover:text-green-600 dark:hover:text-green-400 transition">Features</a>
+      <a href="contact.html" class="hover:text-green-600 dark:hover:text-green-400 transition">contact</a>
+    </nav>
+  </div>
+</header>
+<main class="max-w-full sm:max-w-xl md:max-w-3xl mx-auto px-4 sm:px-6 py-12">
+  <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-center">Contact Us</h1>
+  <form action="#" method="POST" class="bg-white dark:bg-gray-800 p-6 sm:p-8 rounded-lg shadow-lg space-y-6">
+    <div>
+      <label for="name" class="block mb-2 font-semibold">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your Name" class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-gray-700 dark:text-gray-100 transition text-base sm:text-lg" />
+    </div>
+    <div>
+      <label for="email" class="block mb-2 font-semibold">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Your Email" class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-gray-700 dark:text-gray-100 transition text-base sm:text-lg" />
+    </div>
+    <div>
+      <label for="message" class="block mb-2 font-semibold">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Your message here..." class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-green-500 dark:bg-gray-700 dark:text-gray-100 transition text-base sm:text-lg"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 rounded-lg transition duration-300 text-lg">Send Message</button>
+  </form>
+</main>
+<footer class="bg-white dark:bg-gray-800 p-6 mt-20 text-center text-gray-600 dark:text-gray-400 text-sm sm:text-base">
+  &copy; 2025 Modern Authentication. All rights reserved.
+</footer>
+</body>
+</html>
